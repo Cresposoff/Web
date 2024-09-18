@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Enlaces</title>
+</head>
+
+<body>
+    <form id="formulario1" actio="registro.php" method="post">
+    <label for="texto">NOMBRE</label>
+    <input name="nonbre" type="text" placeholder="Ingrese su nombre"><!--value="": para mostrar el texto dentro del cuadro. placeholder="": para mostrar el texto dentro del cuadro pero se quite el texto cuando empiece a escribir-->
+    <br>
+    <label for="password">CONTRASEÑA</label>
+    <input name="contraseña" type="password" placeholder="Ingrese su contraseña" required>
+    <br>
+    <label for="email">EMAIL</label>
+    <input type="email" name="email" placeholder="Ingrese su correo" required>
+    <br>
+    <label for="texto">FECHA</label>
+    <input type="date" name="fecha">
+    <br>
+    <label for="texto">FECHA Y HORA</label>
+    <input type="datetime-local" name="fecha y hora">
+    <br>
+    <label for="texto">BUSCAR</label>
+    <input type="search" name="search">
+    <br>
+    <label for="url">URL</label>
+    <input type="url" name="url">
+    <br>
+    <label for="color">COLOR</label>
+    <input type="color" name="favcolor">
+    <br>
+    <label for="texto">FECHA MAXIMA</label>
+    <input type="date" name="bday" max="1980-12-31">
+    <br>
+    <label for="texto">FECHA MINIMA</label>
+    <input type="date" name="bday" min="2000-12-31">
+    <br>
+    <label for="numero">NUMERO</label>
+    <input type="number" name="quantity" min="1" max="5">
+    <br>
+    <label for="texto">SEMANA</label>
+    <input type="week" name="week_year">
+    <br>
+    <label for="texto">MES</label>
+    <input type="month" name="mes">
+    <br>
+    <label for="texto">ARCHIVO</label>
+    <input type="file" name="myfile" accept=".png, .docx, .pdf"><!--multiple es para varios tipos de documentos y accept para especificos-->
+    <br>
+    <input type="submit" value="ENVIAR">
+
+
+
+
+
+    </form>
+</body>
+
+</html>

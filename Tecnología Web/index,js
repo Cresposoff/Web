@@ -1,0 +1,6 @@
+function contarVocales() {
+    let cadena = document.getElementById("frase").value;
+    let resultado = cadena.match(/[aeiou]/gi);
+    alert("Número de vocales: " + (resultado ? resultado.length : 0)); 
+}
+
