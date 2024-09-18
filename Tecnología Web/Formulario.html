@@ -47,8 +47,28 @@
     <br>
     <label for="texto">ARCHIVO</label>
     <input type="file" name="myfile" accept=".png, .docx, .pdf"><!--multiple es para varios tipos de documentos y accept para especificos-->
+    <!--cuando se vea un paattern es un patrón-->
+    <br>
+    <label>TELEFONO</label>
+    <input type="tel" name="telefono" pattern="{0-9}{3}-{0-9}{5}-{0-9}{2}">
+    <!--Para poder elegir mas de una opción con type="radio" se debe mirar el name (que estén diferentes)-->
+    <br>
+    <input type="radio" name="mascota1" value="perro"><label>perro</label>
+    <br>
+    <input type="radio" name="mascota2" value="gato"><label>gato</label>
+    <br>
+    <input type="checkbox" name="mazda" value="mazda"><label>MAZDA</label>
+    <br>
+    <input type="checkbox" name="toyota" value="toyota"><label>TOYOTA</label>
+    <br>
+    <input type="checkbox" name="audi" value="audi"><label>AUDI</label>
+    <br>
+    <textarea rows="10" cols="20" name="mensaje" placeholder="Escriba su mensaje"></textarea>
+    <br>
+    <input type="reset" name="reset">
     <br>
     <input type="submit" value="ENVIAR">
+    
 
 
 
