@@ -1,0 +1,15 @@
+h1{
+    color: chartreuse;
+}
+
+a:link, a:visited{
+    background-color: crimson;
+    color: darkmagenta;
+    padding: 30px 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    background-color: darkblue;
+}

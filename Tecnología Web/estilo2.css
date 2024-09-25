@@ -1,0 +1,27 @@
+h1{
+    color: blueviolet;
+}
+
+ul{
+    list-style-type: none;
+    background-color: aqua;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+/* Pone los links a la derecha, no en vertical
+*/
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    padding: 10px 60px;
+    margin: 50px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: rgb(39, 53, 180);
+}

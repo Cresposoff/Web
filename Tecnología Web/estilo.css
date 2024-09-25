@@ -4,4 +4,26 @@ table{
 
 table, th, td{
     border: 1px solid black;
+    border-collapse: collapse;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+caption{
+    color: purple;
+    font-size: 45px;
+    line-height: 70px;
+    font-family: 'Edu AU VIC WA NT Guides', cursive;
+}
+
+th{
+    color: palevioletred;
+}
+
+tr:nth-child(even){
+    background-color: #9abae9;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(194, 243, 175);
 }
