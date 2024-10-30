@@ -352,6 +352,12 @@ ul
     font-size: 15px;
 }
 
+#footer .columna.columna-24 img
+{
+    width: 25px;
+    height: 25px;
+}
+
 #contactenos
 {
     background-image: url(img/bannerprincipal3.jpg);
