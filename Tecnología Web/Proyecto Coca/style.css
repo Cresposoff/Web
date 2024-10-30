@@ -21,14 +21,14 @@ p
 
 header
 {
-    padding: 15px 0;
-    position: fixed;
+    padding: 0;
+    position: sticky;
     top: 0;
     left: 0;
-    z-index: 2;
-    background-color: white;
+    z-index: 2; /*esto es para que la barra de navegación quede por encima de la imagen*/
+    background-color: rgb(255, 255, 255);
     width: 100%;
-   
+    font-size: 14px;
 }
 
 header .container
@@ -48,6 +48,16 @@ header .container nav a
     Color: red;
     text-decoration: none;
     margin: 0 15px;
+    border-radius: 10px;
+}
+
+header .container nav a:hover
+{
+    Color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    text-decoration: none;
+    margin: 0;
+    padding: 15px;
 }
 
 .boton
@@ -55,12 +65,21 @@ header .container nav a
     text-align: center;
     text-decoration: none;
     padding: 15px 20px;
+    border-radius: 10px;
 }
 
 .boton.boton-rojo
 {
     color: white;
     background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton.boton-rojo:hover
+{
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
 }
@@ -74,6 +93,15 @@ header .container nav a
     border: 1px solid red;
 }
 
+.boton.boton-blanco:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    border:     1px solid red;
+}
+
 .seccion
 {
     padding-top: 60px;
@@ -81,10 +109,9 @@ header .container nav a
 
 }
 
-.cuadrado-perfecto /pendiente este codigo para  la clase de los lunes/
+.cuadrado-perfecto /*pendiente este codigo para  la clase de los lunes*/
 {
     width: 100%;
-    
 }
 
 .container
@@ -99,11 +126,11 @@ header .container nav a
 {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.columna /quedamos hasta aca con la clase del lunes/
+.columna /*quedamos hasta aca con la clase del lunes*/
 {
     padding-right: 15px;
     padding-left: 15px;
@@ -120,7 +147,7 @@ header .container nav a
     position: relative;
 }
 
-#inicio img /quedamos hasta aca con la clase del miercoles/
+#inicio img /*quedamos hasta aca con la clase del miercoles*/
 {
     width: 100%;
     display: block;
@@ -150,9 +177,8 @@ header .container nav a
 
 #nosotros
 {
-    background-image: url(img/latas.jpg);
     background-size: cover;
-
+    background-color: rgb(255, 0, 0);
 }
 
 #nosotros p
@@ -163,20 +189,28 @@ header .container nav a
     margin: 0;
 }
 
+#servicios {
+    background-image: url(img/bannerprincipal2.jpg);
+    background-size: cover; /* Escala la imagen para cubrir el área sin distorsión */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el área */
+}
+
 #servicios .bloque-servicio
 {
     border: 1px solid grey;
-
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
 }
 
-#servicios .bloque-servicio .bloque-img-servicio{
-
-}
 
 #servicios .bloque-servicio .bloque-img-servicio img 
 {
     width: 100%;
+    height: 350px;
+    object-fit: contain;
 }
+
 
 #servicios .bloque-servicio .bloque-contenido-servicio
 {
@@ -187,4 +221,177 @@ header .container nav a
 {
     margin-top: 0px;
     font-size: 25px;
+}
+
+#galeria {
+    background-color: rgb(238, 238, 238);
+    background-image: url(img/logo-grande.png);
+    background-size: cover; /* Escala la imagen para cubrir el área sin distorsión */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el área */
+}
+
+#galeria .cuadrado-perfecto img 
+{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+
+/* aquí le ponemos opacidad pero solo al recuadro para alcanzar a ver el fondo sin afectar al contenido y la imagen */
+
+#galeria .cuadrado-perfecto:hover
+{
+    opacity: 0.5;
+}
+
+#galeria .cuadrado-perfecto:hover h4
+{
+    color: rgb(255, 0, 0);
+}
+
+.cuadrado-perfecto
+{
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 15px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí ponemos una caja de sombra */
+}
+
+.cuadrado-perfecto h4
+{
+    padding-left: 15px;
+    text-align: left;
+}
+
+.columna.columna-50
+{
+    margin: 50px;
+}
+
+footer
+{
+    background-color: rgb(255, 0, 0);
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 2; 
+    color: rgb(255, 255, 255);
+}
+
+footer p
+{
+    color: rgb(255, 255, 255);
+}
+
+#footer .columna.columna-24
+{
+    /*aquí es para poner Temas Relacionados, Datos de Contactos, Redes Sociales una al lado de la otra*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer .columna
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .columna.columna-25 img
+{
+    width: 33.3%;
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0; /* Opcional: elimina el espacio de la izquierda */
+    margin: 0;
+}
+#footer .container a
+{
+    color: rgb(18, 221, 109);
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+#footer .barra-footer {
+    color: rgb(255, 0, 149);
+    text-align: center;
+    font-size: 15px;
+}
+
+#contactenos
+{
+    background-image: url(img/bannerprincipal3.jpg);
+    background-size: cover; /* Escala la imagen para cubrir el área sin distorsión */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el área */
+    padding: 30px;
+    font-size: 20px;
+}
+
+#contactenos iframe
+{
+    border-radius: 10px;
+    width: 600px;
+    height: 450px;
+}
+
+#contactenos .form-block input
+{
+    border-radius: 6px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#contactenos .form-block textarea
+{
+    border-radius: 6px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#contactenos label
+{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#contactenos .form-block
+{
+    margin: 10px 0;
+}
+
+#contactenos .form-block input:hover
+{
+    border: 1px solid rgb(255, 0, 0);   
+    background-color: rgb(255, 201, 201);
+}
+
+#contactenos .boton.boton-rojo
+{
+    border: 1px solid rgb(255, 0, 0);   
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#contactenos .boton.boton-rojo:hover
+{
+    border: 1px solid rgb(255, 255, 255);   
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+}
+
+#contactenos .form-block textarea:hover
+{
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(255, 201, 201);
 }
