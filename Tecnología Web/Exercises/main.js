@@ -12,3 +12,8 @@ if (edad >= 18) {
 } else {
     datos.innerHTML += `<h3> No soy mayor de edad </h3>`;
 }
+
+//mostrar los diez últmos años de 2024 hacia atrás
+for (i = 2024; i >= 2015; i--) {
+    datos.innerHTML += `<h4> Este es el año: ${i} </h4>`;
+}
