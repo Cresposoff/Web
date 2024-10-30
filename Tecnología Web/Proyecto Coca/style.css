@@ -278,12 +278,19 @@ footer
     bottom: 0;
     width: 100%;
     z-index: 2; 
-    color: rgb(255, 255, 255);
+    color: rgb(255, 218, 218);
 }
 
 footer p
 {
+    color: rgb(255, 218, 218);
+}
+
+footer h3
+{
     color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 #footer .columna.columna-24
@@ -311,15 +318,36 @@ ul
     padding: 0; /* Opcional: elimina el espacio de la izquierda */
     margin: 0;
 }
+
+#footer .row
+{
+    margin: 50px 0;
+}
+
+
 #footer .container a
 {
-    color: rgb(18, 221, 109);
+    color: rgb(128, 58, 58);
     text-decoration: none;
-    margin: 0px 15px;
+    margin: 5px;
+}
+
+#footer .container a:hover
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#footer .container li
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 5px;
+    
 }
 
 #footer .barra-footer {
-    color: rgb(255, 0, 149);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 15px;
 }
