@@ -84,6 +84,12 @@ header .container nav a:hover
     font-weight: bold;
 }
 
+#sevicios .bloque-contenido-servicio a
+{
+    align-items: center;
+
+}
+
 .boton.boton-blanco
 {
     color: red;
@@ -201,6 +207,7 @@ header .container nav a:hover
     border: 1px solid grey;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
+    height: 600px;
 }
 
 
