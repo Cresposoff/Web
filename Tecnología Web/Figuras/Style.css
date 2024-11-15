@@ -48,7 +48,7 @@ body{
     right: -35%;
     margin: auto;
     animation-name:transformar;
-    animation-duration:1.2s;
+    animation-duration: 1.2s;
     animation-iteration-count: infinite;
 }
 @keyframes transformar{
