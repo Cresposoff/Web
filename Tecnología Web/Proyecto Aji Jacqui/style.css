@@ -12,7 +12,12 @@ body {
     line-height: 1.6;
 }
 
-.header {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
     min-height: 80px;
     max-height: 90px;
     background-color: #ff4d4d;
@@ -59,7 +64,19 @@ body {
     background-color: #28a745;
 }
 
+.night-light-label {
+    display: block;
+    margin: 20px 0;
+    height: 31px;
+    width: 60px;
+    border: 2px solid #4672fe;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
 .banner {
+    margin-top: 90px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/bannerprincipal.jpg') center/cover no-repeat;
     color: white;
     padding: 4rem 2rem;
@@ -103,24 +120,105 @@ body {
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .product-item {
     background-color: #ffebeb;
-    padding: 1rem;
+    padding: 1.5rem;
+    margin: 10px 20px;
     border-radius: 5px;
-    width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 350px;
+    height: auto;
+    display: table-column;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.product-item img{
+    background-color: #ffebeb;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-item::before,
+.product-item::after {
+  position: absolute;
+  content: "";
+  width: 1%;
+  height: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  backdrop-filter: blur(5px);
+  color: white;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.product-item::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.product-item::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.product-item:hover::before,
+.product-item:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.product-item:hover:after {
+  content: "HELLO";
 }
 
 .product-item h3 {
     color: #ff4d4d;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/cultivo.jpg') center/cover no-repeat;
+    color: white;
 }
 
 .contact form {
+    background-color: #1a1a1a1a;
+    border: 2px solid #ffffff;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
     max-width: 500px;
     margin: 0 auto;
     text-align: left;
+    position: relative;
+    min-width: 300px;
+    gap: 2rem;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .contact label {
@@ -136,11 +234,20 @@ body {
     margin-top: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.contact div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact button {
+    font-size: 1rem;
+    font-weight: bold;
     display: block;
-    width: 100%;
+    width: 100px;
+    height: 50px;
     padding: 0.7rem;
     background-color: #ff4d4d;
     /* Rojo */

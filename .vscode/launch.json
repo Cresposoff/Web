@@ -4,12 +4,13 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         
         {
             "type": "chrome",
             "request": "launch",
             "name": "Open ListadosDeEstudiantes.html",
-            "file": "c:\\Users\\LENOVO\\Music\\Sebastián\\Web\\Tecnología Web\\"
+            "file": "c:\\Users\\LENOVO\\Music\\Sebastián\\Web\\Tecnología Web\\Proyecto Aji Jacqui\\ají.html"
         }
     ]
 }

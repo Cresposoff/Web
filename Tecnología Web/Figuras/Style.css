@@ -1,12 +1,12 @@
-*{
+* {
     margin: 40px;
 }
 
-body{
+body {
     background-color: cadetblue;
 }
 
-#Circulo1{
+#Circulo1 {
     width: 100px;
     height: 100px;
     background-color: darkgoldenrod;
@@ -14,10 +14,10 @@ body{
     border-radius: 50%;
     animation-name: bajar;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
-#Circulo2{
+#Circulo2 {
     width: 100px;
     height: 100px;
     background-color: rgb(0, 0, 0);
@@ -25,52 +25,55 @@ body{
     border-radius: 50%;
     left: 30%;
     margin: auto;
-    animation-name:deslizar;
+    animation-name: deslizar;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
-@keyframes deslizar{
-   
-    50%{
-        
-        left:60%;
-        opacity: 0.1;
-    }
+@keyframes deslizar {
+
+    50% {
+
+        left: 60%;
+        opacity: 0.1;
+    }
 }
 
-#Circulo3{
+#Circulo3 {
     width: 100px;
     height: 100px;
     background-color: rgb(18, 0, 220);
-    position:relative;
+    position: relative;
     border-radius: 50%;
     right: -35%;
     margin: auto;
-    animation-name:transformar;
+    animation-name: transformar;
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
 }
-@keyframes transformar{
-   
-    20%{
-        
+
+@keyframes transformar {
+
+    20% {
+
         transform: scale(0.5);
         background-color: red;
-    }
+    }
 }
 
 
-@keyframes bajar{s
-    0%{
-        top:0px;
+@keyframes bajar {
+    s 0% {
+        top: 0px;
     }
-    50%{
-        top:460px;
-        width:130px;
-        height:70px;
+
+    50% {
+        top: 460px;
+        width: 130px;
+        height: 70px;
     }
-    100%{
-        top:0px;
+
+    100% {
+        top: 0px;
     }
 }
