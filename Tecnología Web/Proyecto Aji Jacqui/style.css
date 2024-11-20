@@ -115,6 +115,21 @@ header {
     text-align: center;
 }
 
+.products h2 {
+    backdrop-filter: blur(5px) brightness(0.8); 
+    -webkit-backdrop-filter: blur(5px) brightness(0.5);
+    background-color: rgba(255, 255, 255, 0.135);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.492);
+    padding: 0.5rem;
+    margin: auto 35%;
+    border-radius: 10px;
+    color: white;
+}
+
+.products {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/cultivo.jpg') center/cover no-repeat;
+}
+
 .products .product-list {
     display: flex;
     justify-content: center;
@@ -123,73 +138,160 @@ header {
     flex-wrap: wrap;
 }
 
-.product-item {
-    background-color: #ffebeb;
-    padding: 1.5rem;
-    margin: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* From Uiverse.io by Smit-Prajapati */
+.card {
+    --accent-color: #ff4d4d;
     position: relative;
-    width: 350px;
-    height: auto;
-    display: table-column;
-    flex-direction: column;
-    justify-content: end;
-    border-radius: 15px;
+    width: 300px;
+    background: white;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 50px 30px -20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card .image-container {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    border-radius: 0.7rem;
+    border-top-right-radius: 5rem;
+    margin-bottom: 1rem;
+}
+
+.card .image-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.card .image-container .price {
+    position: absolute;
+    right: 0.7rem;
+    bottom: -1rem;
+    background: white;
+    color: var(--accent-color);
+    font-weight: 900;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px 0px;
+}
+
+.card .favorite {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    right: 5px;
     cursor: pointer;
 }
 
-.product-item img{
-    background-color: #ffebeb;
-    width: 100%;
-    object-fit: cover;
+.card .favorite input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-.product-item::before,
-.product-item::after {
-  position: absolute;
-  content: "";
-  width: 1%;
-  height: 1%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  backdrop-filter: blur(5px);
-  color: white;
-  border-radius: 100%;
-  transition: all 0.5s;
+.card .favorite input:checked~svg {
+    animation: bouncing 0.3s;
+    fill: rgb(255, 95, 95);
+    filter: drop-shadow(0px 3px 1px rgba(53, 53, 53, 0.14));
 }
 
-.product-item::before {
-  top: 0;
-  right: 0;
-  border-radius: 0 15px 0 100%;
+.card .favorite svg {
+    fill: #a8a8a8;
 }
 
-.product-item::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100%  0 15px;
+.card .content {
+    padding: 0px 0.8rem;
+    margin-bottom: 1rem;
 }
 
-.product-item:hover::before,
-.product-item:hover:after {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: all 0.5s;
+.card .content .brand {
+    font-weight: 900;
+    color: #a6a6a6;
 }
 
-.product-item:hover:after {
-  content: "HELLO";
+.card .content .product-name {
+    font-weight: 700;
+    color: #666666;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
 }
 
-.product-item h3 {
-    color: #ff4d4d;
-    margin: 2rem 0 0.5rem 0;
-    font-size: 1.5rem;
+.card .content .rating {
+    color: #a8a8a8;
+    font-size: 0.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card .content .rating svg {
+    height: 12px;
+}
+
+.card .button-container {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.card .button-container .button {
+    border-radius: 1.4rem 1.4rem 1.4rem 1.4rem;
+    border: none;
+    padding: 0.5rem 0;
+    background: var(--accent-color);
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.card .button-container .button:hover {
+    background: #1f8436;
+}
+
+.card .button-container .buy-button {
+    flex: auto;
+}
+
+.card .button-container .cart-button {
+    display: grid;
+    place-content: center;
+    width: 50px;
+}
+
+.card .button-container .cart-button svg {
+    width: 15px;
+    fill: white;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+@keyframes bouncing {
+
+    from,
+    to {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(1.5, 2.1);
+    }
+
+    50% {
+        transform: scale(2.1, 1.5);
+    }
+
+    75% {
+        transform: scale(1.5, 2.05);
+    }
 }
 
 .clearfix {
@@ -197,8 +299,37 @@ header {
 }
 
 .contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/cultivo.jpg') center/cover no-repeat;
+    /* From Uiverse.io by csemszepp */ 
+    width: 100%;
+    height: 100%;
+    --s: 200px; /* control the size */
+    --c1: #9f2f2f;
+    --c2: #388735;
+    --c3: #763535;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
     color: white;
+    display: flex;
+}
+
+.contact iframe {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    width: 600px;
+    height: 450px;
 }
 
 .contact form {
@@ -258,10 +389,54 @@ header {
     cursor: pointer;
 }
 
+/* Footer */
 .footer {
-    background-color: #333;
+    background: linear-gradient(135deg, #d84315, #4e342e); /* Degradado cálido */
     color: white;
+    padding: 30px 15px; /* Espaciado interno */
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+}
+
+.footer .footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 15px; /* Espaciado entre íconos */
+}
+
+.footer .social-links li {
+    margin: 0;
+}
+
+.footer .social-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-links li a:hover {
+    transform: scale(1.2); /* Efecto al pasar el cursor */
+    color: #ffab91;
+}
+
+.footer .social-links li a i {
+    margin-right: 8px;
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+footer .barra-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    font-size: 13px;
+    color: #000000;
+    margin-top: 20px;
 }
