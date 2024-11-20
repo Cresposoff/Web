@@ -10,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -81,17 +82,52 @@ header {
     color: white;
     padding: 4rem 2rem;
     text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Animación de fuego alrededor del banner */
+@keyframes fuego {
+    0% {
+        box-shadow: 0 0 15px 0 rgba(255, 69, 0, 0.8), 0 0 25px 5px rgba(255, 69, 0, 0.5);
+    }
+    25% {
+        box-shadow: 0 0 20px 5px rgba(255, 69, 0, 0.9), 0 0 30px 10px rgba(255, 69, 0, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 30px 10px rgba(255, 69, 0, 1), 0 0 40px 20px rgba(255, 69, 0, 0.8);
+    }
+    75% {
+        box-shadow: 0 0 20px 5px rgba(255, 69, 0, 0.9), 0 0 30px 15px rgba(255, 69, 0, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 15px 0 rgba(255, 69, 0, 0.8), 0 0 25px 5px rgba(255, 69, 0, 0.5);
+    }
 }
 
 .banner h2 {
     font-size: 2.5rem;
+    animation: fadeIn 1s ease-out;
 }
 
 .banner p {
     font-size: 1.2rem;
     margin: 1rem 0;
+    animation: fadeIn 1.5s ease-out;
 }
 
+.banner a {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Botón del banner */
 .btn {
     display: inline-block;
     background-color: #28a745;
@@ -101,6 +137,92 @@ header {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1rem;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Hover del botón */
+.btn:hover {
+    background-color: #1f8436;
+}
+
+/* Efecto de desvanecimiento de texto y botones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover animado en el banner */
+.banner:hover {
+    animation: fuego 1s infinite; 
+}
+
+.banner:hover h2,
+.banner:hover p {
+    color: #ff9999;
+}
+
+.banner a:hover {
+    background-color: #1f8436;
+    transform: scale(1.1);
+}
+
+/* Efecto al pasar el mouse sobre el logo */
+.logo a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para el botón de modo oscuro */
+.dark-mode-toggle {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+/* Cambiar color del botón cuando está activado */
+.dark-mode-toggle.active {
+    color: #ffeb3b; /* Amarillo para indicar que está activado */
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #121212; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+}
+
+header.dark-mode {
+    background-color: #333; /* Fondo oscuro en el header */
+}
+
+.navbar a.dark-mode {
+    color: #ddd; /* Enlaces más claros */
+}
+
+.navbar a.dark-mode:hover {
+    background-color: #444; /* Fondo del enlace cuando se pasa el mouse */
+}
+
+.banner.dark-mode {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/bannerprincipal.jpg') center/cover no-repeat;
+}
+
+.products.dark-mode {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/cultivo.jpg') center/cover no-repeat;
+}
+
+.footer.dark-mode {
+    background: linear-gradient(135deg, #4e342e, #d84315); /* Degradado en el footer */
 }
 
 /* cuando se pasa el mouse sobre el boton */
@@ -438,5 +560,5 @@ footer .barra-footer {
     background-color: white;
     font-size: 13px;
     color: #000000;
-    margin-top: 20px;
+    margin-top: 20px;
 }
