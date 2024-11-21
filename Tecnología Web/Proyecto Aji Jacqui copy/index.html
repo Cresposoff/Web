@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ají Jaqui - Las mejores salsas de ají directo de la tierra a tu mesa">
+    <title>Ají Jaqui - Salsas de ají</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <!-- Agregado el enlace para que al hacer click vaya al inicio -->
+            <a href="index.html"><img src="img/logo.png" alt="Ají Jaqui"></a>
+            <h1></h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <button class="button1" id="theme-toggle">
+            🌞
+        </button>
+        
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="img/imagen1.jpg" alt="Salsa Ají 1">
+            </div>
+            <div class="slide">
+                <img src="img/imagen2.jpg" alt="Salsa Ají 2">
+            </div>
+            <div class="slide">
+                <img src="img/imagen3.jpg" alt="Salsa Ají 3">
+            </div>
+        </div>
+        <button class="prev" id="prev-btn">&#10094;</button>
+        <button class="next" id="next-btn">&#10095;</button>
+        <h2>¡Para Verdaderos Valientes!</h2>
+        <p>Las mejores salsas de ají directo de la tierra a tu mesa, creadas con pasión y la más alta calidad.</p>
+        <p>Disfruta de una experiencia única con sabores intensos que harán que tus platillos se eleven al siguiente
+            nivel.</p>
+        <a href="#products" class="btn">Ver Productos</a>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div>
+            <h2>Sobre Nosotros</h2>
+            <p>Ají Jaqui es una empresa dedicada a la elaboración de salsas de ají de alta calidad, utilizando
+                ingredientes
+                frescos y naturales. Nuestro compromiso es ofrecer productos que resalten el sabor auténtico del ají
+                colombiano.</p>
+        </div>
+
+        <div class="mission-vision">
+            <div class="mission">
+                <h3>Misión</h3>
+                <p>Ofrecer snacks innovadores y de alta calidad que combinen el sabor auténtico del plátano con el
+                    picante único de jalapeño, serrano y habanero, creando experiencias deliciosas y únicas para
+                    nuestros clientes en cada bocado.</p>
+            </div>
+            <div class="vision">
+                <h3>Visión</h3>
+                <p>Convertirnos en la marca líder en snacks diferenciados, reconocida por nuestra creatividad, calidad y
+                    compromiso con ingredientes naturales, llegando a ser una referencia en el mercado global de
+                    productos innovadores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>🔥 Nuestros Productos 🔥</h2>
+        <div class="product-list">
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/jalapeno.jpg" alt="Salsa Jalapeño">
+                    <div class="price">$7.499</div>
+                </div>
+                <label class="favorite">
+                    <input type="checkbox" class="favorite-checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                        <path
+                            d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z">
+                        </path>
+                    </svg>
+                </label>
+
+                <div class="content">
+                    <div class="brand">Salsa Jalapeño</div>
+                    <div class="product-name">Un ají fresco y suave con un toque de picante, ideal para salsas, guisos y
+                        acompañar tus platos
+                        favoritos.</div>
+                    <div class="rating">
+                        <svg viewBox="0 0 99.498 16.286" xmlns="http://www.w3.org/2000/svg" class="svg four-star-svg">
+                            <path fill="#fc0" transform="translate(-0.001 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                id="star-svgrepo-com"></path>
+                            <path fill="#fc0" transform="translate(20.607 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-2"></path>
+                            <path fill="#fc0" transform="translate(41.215 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-3"></path>
+                            <path fill="#fc0" transform="translate(61.823 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-4"></path>
+                            <path fill="#e9e9e9" transform="translate(82.431 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                        </svg>
+                        (9,062)
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="cart-button button">
+                        <svg viewBox="0 0 27.97 25.074" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0,1.175A1.173,1.173,0,0,1,1.175,0H3.4A2.743,2.743,0,0,1,5.882,1.567H26.01A1.958,1.958,0,0,1,27.9,4.035l-2.008,7.459a3.532,3.532,0,0,1-3.4,2.61H8.36l.264,1.4a1.18,1.18,0,0,0,1.156.955H23.9a1.175,1.175,0,0,1,0,2.351H9.78a3.522,3.522,0,0,1-3.462-2.865L3.791,2.669A.39.39,0,0,0,3.4,2.351H1.175A1.173,1.173,0,0,1,0,1.175ZM6.269,22.724a2.351,2.351,0,1,1,2.351,2.351A2.351,2.351,0,0,1,6.269,22.724Zm16.455-2.351a2.351,2.351,0,1,1-2.351,2.351A2.351,2.351,0,0,1,22.724,20.373Z"
+                                id="cart-shopping-solid"></path>
+                        </svg>
+                    </button>
+                    <button class="mas-button button">
+                        <a href="detalles/detallesJalapeno.html" class="button">Ver más</a>
+                    </button>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/serrano.jpg" alt="Salsa Jalapeño">
+                    <div class="price">$7.999</div>
+                </div>
+                <label class="favorite">
+                    <input type="checkbox" class="favorite-checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                        <path
+                            d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z">
+                        </path>
+                    </svg>
+                </label>
+
+                <div class="content">
+                    <div class="brand">Salsa Serrano</div>
+                    <div class="product-name">De sabor vibrante y un picante moderado, perfecto para salsas frescas y
+                        marinadas auténticas.</div>
+                    <div class="rating">
+                        <svg viewBox="0 0 99.498 16.286" xmlns="http://www.w3.org/2000/svg" class="svg four-star-svg">
+                            <path fill="#fc0" transform="translate(-0.001 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                id="star-svgrepo-com"></path>
+                            <path fill="#fc0" transform="translate(20.607 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-2"></path>
+                            <path fill="#fc0" transform="translate(41.215 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-3"></path>
+                            <path fill="#e9e9e9" transform="translate(61.823 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                            <path fill="#e9e9e9" transform="translate(82.431 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                        </svg>
+                        (1,363)
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="cart-button button">
+                        <svg viewBox="0 0 27.97 25.074" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0,1.175A1.173,1.173,0,0,1,1.175,0H3.4A2.743,2.743,0,0,1,5.882,1.567H26.01A1.958,1.958,0,0,1,27.9,4.035l-2.008,7.459a3.532,3.532,0,0,1-3.4,2.61H8.36l.264,1.4a1.18,1.18,0,0,0,1.156.955H23.9a1.175,1.175,0,0,1,0,2.351H9.78a3.522,3.522,0,0,1-3.462-2.865L3.791,2.669A.39.39,0,0,0,3.4,2.351H1.175A1.173,1.173,0,0,1,0,1.175ZM6.269,22.724a2.351,2.351,0,1,1,2.351,2.351A2.351,2.351,0,0,1,6.269,22.724Zm16.455-2.351a2.351,2.351,0,1,1-2.351,2.351A2.351,2.351,0,0,1,22.724,20.373Z"
+                                id="cart-shopping-solid"></path>
+                        </svg>
+                    </button>
+                    <button class="mas-button button">
+                        <a href="detalles/detallesSerrano.html" class="button">Ver más</a>
+                    </button>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/habanero.jpg" alt="Salsa Jalapeño">
+                    <div class="price">$8.499</div>
+                </div>
+                <label class="favorite">
+                    <input type="checkbox" class="favorite-checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                        <path
+                            d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z">
+                        </path>
+                    </svg>
+                </label>
+
+                <div class="content">
+                    <div class="brand">Salsa Habanero</div>
+                    <div class="product-name">Aromático, afrutado y con un picante intenso, ideal para dar carácter a
+                        salsas y adobos especiales.</div>
+                    <div class="rating">
+                        <svg viewBox="0 0 99.498 16.286" xmlns="http://www.w3.org/2000/svg" class="svg four-star-svg">
+                            <path fill="#fc0" transform="translate(-0.001 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                id="star-svgrepo-com"></path>
+                            <path fill="#fc0" transform="translate(20.607 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-2"></path>
+                            <path fill="#fc0" transform="translate(41.215 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-3"></path>
+                            <path fill="#fc0" transform="translate(61.823 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-4"></path>
+                            <path fill="#fc0" transform="translate(82.431 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-4"></path>
+                        </svg>
+                        (12,823)
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="cart-button button">
+                        <svg viewBox="0 0 27.97 25.074" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0,1.175A1.173,1.173,0,0,1,1.175,0H3.4A2.743,2.743,0,0,1,5.882,1.567H26.01A1.958,1.958,0,0,1,27.9,4.035l-2.008,7.459a3.532,3.532,0,0,1-3.4,2.61H8.36l.264,1.4a1.18,1.18,0,0,0,1.156.955H23.9a1.175,1.175,0,0,1,0,2.351H9.78a3.522,3.522,0,0,1-3.462-2.865L3.791,2.669A.39.39,0,0,0,3.4,2.351H1.175A1.173,1.173,0,0,1,0,1.175ZM6.269,22.724a2.351,2.351,0,1,1,2.351,2.351A2.351,2.351,0,0,1,6.269,22.724Zm16.455-2.351a2.351,2.351,0,1,1-2.351,2.351A2.351,2.351,0,0,1,22.724,20.373Z"
+                                id="cart-shopping-solid"></path>
+                        </svg>
+                    </button>
+                    <button class="mas-button button">
+                        <a href="detalles/detallesHabanero.html" class="button">Ver más</a>
+                    </button>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/chips-platano-Jalapeno.jpg" alt="Salsa Jalapeño">
+                    <div class="price">$2.990</div>
+                </div>
+                <label class="favorite">
+                    <input type="checkbox" class="favorite-checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                        <path
+                            d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z">
+                        </path>
+                    </svg>
+                </label>
+
+                <div class="content">
+                    <div class="brand">Chips de Plátano - Jalapeño</div>
+                    <div class="product-name">Un snack crujiente y suave, con el toque fresco y delicioso del jalapeño.
+                        Acompañar tus comidas favoritas.</div>
+                    <div class="rating">
+                        <svg viewBox="0 0 99.498 16.286" xmlns="http://www.w3.org/2000/svg" class="svg four-star-svg">
+                            <path fill="#fc0" transform="translate(-0.001 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                id="star-svgrepo-com"></path>
+                            <path fill="#fc0" transform="translate(20.607 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-2"></path>
+                            <path fill="#fc0" transform="translate(41.215 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-3"></path>
+                            <path fill="#fc0" transform="translate(61.823 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-4"></path>
+                            <path fill="#fc0" transform="translate(82.431 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-4"></path>
+                        </svg>
+                        (16,274)
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="cart-button button">
+                        <svg viewBox="0 0 27.97 25.074" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0,1.175A1.173,1.173,0,0,1,1.175,0H3.4A2.743,2.743,0,0,1,5.882,1.567H26.01A1.958,1.958,0,0,1,27.9,4.035l-2.008,7.459a3.532,3.532,0,0,1-3.4,2.61H8.36l.264,1.4a1.18,1.18,0,0,0,1.156.955H23.9a1.175,1.175,0,0,1,0,2.351H9.78a3.522,3.522,0,0,1-3.462-2.865L3.791,2.669A.39.39,0,0,0,3.4,2.351H1.175A1.173,1.173,0,0,1,0,1.175ZM6.269,22.724a2.351,2.351,0,1,1,2.351,2.351A2.351,2.351,0,0,1,6.269,22.724Zm16.455-2.351a2.351,2.351,0,1,1-2.351,2.351A2.351,2.351,0,0,1,22.724,20.373Z"
+                                id="cart-shopping-solid"></path>
+                        </svg>
+                    </button>
+                    <button class="mas-button button">
+                        <a href="detalles/detallesCJalapeno.html" class="button">Ver más</a>
+                    </button>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/chips-platano-Serrano.jpg" alt="Salsa Jalapeño">
+                    <div class="price">$3.499</div>
+                </div>
+                <label class="favorite">
+                    <input type="checkbox" class="favorite-checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                        <path
+                            d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z">
+                        </path>
+                    </svg>
+                </label>
+
+                <div class="content">
+                    <div class="brand">Chips de Plátano - Serrano</div>
+                    <div class="product-name">Sabor vibrante y moderadamente picante, perfecto para los amantes del
+                        contraste. Ideales para disfrutar como snack.</div>
+                    <div class="rating">
+                        <svg viewBox="0 0 99.498 16.286" xmlns="http://www.w3.org/2000/svg" class="svg four-star-svg">
+                            <path fill="#fc0" transform="translate(-0.001 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                id="star-svgrepo-com"></path>
+                            <path fill="#fc0" transform="translate(20.607 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-2"></path>
+                            <path fill="#fc0" transform="translate(41.215 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-3"></path>
+                            <path fill="#fc0" transform="translate(61.823 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-4"></path>
+                            <path fill="#e9e9e9" transform="translate(82.431 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                        </svg>
+                        (10,012)
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="cart-button button">
+                        <svg viewBox="0 0 27.97 25.074" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0,1.175A1.173,1.173,0,0,1,1.175,0H3.4A2.743,2.743,0,0,1,5.882,1.567H26.01A1.958,1.958,0,0,1,27.9,4.035l-2.008,7.459a3.532,3.532,0,0,1-3.4,2.61H8.36l.264,1.4a1.18,1.18,0,0,0,1.156.955H23.9a1.175,1.175,0,0,1,0,2.351H9.78a3.522,3.522,0,0,1-3.462-2.865L3.791,2.669A.39.39,0,0,0,3.4,2.351H1.175A1.173,1.173,0,0,1,0,1.175ZM6.269,22.724a2.351,2.351,0,1,1,2.351,2.351A2.351,2.351,0,0,1,6.269,22.724Zm16.455-2.351a2.351,2.351,0,1,1-2.351,2.351A2.351,2.351,0,0,1,22.724,20.373Z"
+                                id="cart-shopping-solid"></path>
+                        </svg>
+                    </button>
+                    <button class="mas-button button">
+                        <a href="detalles/detallesCSerrano.html" class="button">Ver más</a>
+                    </button>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/chips-platano-Habanero.jpg" alt="Salsa Jalapeño">
+                    <div class="price">$3.999</div>
+                </div>
+                <label class="favorite">
+                    <input type="checkbox" class="favorite-checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                        <path
+                            d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z">
+                        </path>
+                    </svg>
+                </label>
+
+                <div class="content">
+                    <div class="brand">Chips de Plátano - Habanero</div>
+                    <div class="product-name">Aromáticos y audaces, con el picante frutal del habanero en cada bocado.
+                        El snack perfecto para los amantes de lo extremo</div>
+                    <div class="rating">
+                        <svg viewBox="0 0 99.498 16.286" xmlns="http://www.w3.org/2000/svg" class="svg four-star-svg">
+                            <path fill="#fc0" transform="translate(-0.001 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                id="star-svgrepo-com"></path>
+                            <path fill="#fc0" transform="translate(20.607 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-2"></path>
+                            <path fill="#e9e9e9" transform="translate(41.215 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                            <path fill="#e9e9e9" transform="translate(61.823 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                            <path fill="#e9e9e9" transform="translate(82.431 -1.047)"
+                                d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                        </svg>
+                        (2,062)
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="cart-button button">
+                        <svg viewBox="0 0 27.97 25.074" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0,1.175A1.173,1.173,0,0,1,1.175,0H3.4A2.743,2.743,0,0,1,5.882,1.567H26.01A1.958,1.958,0,0,1,27.9,4.035l-2.008,7.459a3.532,3.532,0,0,1-3.4,2.61H8.36l.264,1.4a1.18,1.18,0,0,0,1.156.955H23.9a1.175,1.175,0,0,1,0,2.351H9.78a3.522,3.522,0,0,1-3.462-2.865L3.791,2.669A.39.39,0,0,0,3.4,2.351H1.175A1.173,1.173,0,0,1,0,1.175ZM6.269,22.724a2.351,2.351,0,1,1,2.351,2.351A2.351,2.351,0,0,1,6.269,22.724Zm16.455-2.351a2.351,2.351,0,1,1-2.351,2.351A2.351,2.351,0,0,1,22.724,20.373Z"
+                                id="cart-shopping-solid"></path>
+                        </svg>
+                    </button>
+                    <button class="mas-button button">
+                        <a href="detalles/detallesCHabanero.html" class="button">Ver más</a>
+                    </button>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=es&amp;q=Cagu%C3%A1n,%20Neiva-Huila+(Aj%C3%AD%20Jacqui)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                href="https://www.gps.ie/car-satnav-gps/">Sat Navs</a></iframe>
+        <form action="#" method="post">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta o quieres realizar un pedido?</p>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div>
+                <div class="space">
+                    <!-- agregamos un div para poder alnear el boton a la derecha -->
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columna">
+                <img src="img/logo.png" alt="Logo Ají Jaqui" style="width: 100px; margin-bottom: 15px;">
+                <p>La empresa Aji Jacqui, es de las mejores en salsas de ají directo de la tierra a tu mesa. Con una
+                    variedad de salsas de ají de alta calidad, aji jacqui es la mejor opción para aquellos que
+                    buscan una salsa de ají fresca y deliciosa.</p>
+                <ul class="social-links">
+
+                    <li><a href="https://www.facebook.com/share/174GhJ8t86/" target="_blank"><i
+                                class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/ajijacqui?igsh=bGpmaWtmNzV0bWk5" target="_blank"><i
+                                class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="barra-footer">
+                &copy; Derechos reservados - 2024
+            </div>
+    </footer>
+    <script>
+        //modo oscuro
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Almacena o recupera el modo del usuario
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeToggle.textContent = '🌙';
+        }
+
+        // Alternar entre modos
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            themeToggle.textContent = isDarkMode ? '🌙' : '🌞';
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+
+            const nextButton = document.getElementById('next-btn');
+            const prevButton = document.getElementById('prev-btn');
+            let slideInterval;
+
+            function showSlide(index) {
+                if (index >= totalSlides) {
+                    currentSlide = 0;
+                } else if (index < 0) {
+                    currentSlide = totalSlides - 1;
+                } else {
+                    currentSlide = index;
+                }
+
+                slides.forEach((slide) => {
+                    slide.classList.remove('active');
+                });
+
+                slides[currentSlide].classList.add('active');
+            }
+
+            function startSlideShow() {
+                slideInterval = setInterval(() => {
+                    showSlide(currentSlide + 1);
+                }, 5000);
+            }
+
+            function stopSlideShow() {
+                clearInterval(slideInterval);
+            }
+
+            // Inicializar el slider
+            showSlide(currentSlide);
+            startSlideShow();
+
+            // Botones de navegación
+            nextButton.addEventListener('click', () => {
+                stopSlideShow();
+                showSlide(currentSlide + 1);
+                startSlideShow();
+            });
+
+            prevButton.addEventListener('click', () => {
+                stopSlideShow();
+                showSlide(currentSlide - 1);
+                startSlideShow();
+            });
+        });
+    </script>
+</body>
+
+</html>

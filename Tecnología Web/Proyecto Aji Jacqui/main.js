@@ -99,3 +99,54 @@ themeToggle.addEventListener('click', () => {
     themeToggle.textContent = isDarkMode ? '🌙' : '🌞';
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 });
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+const nextButton = document.getElementById('next-btn');
+const prevButton = document.getElementById('prev-btn');
+let slideInterval;
+
+function showSlide(index) {
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    slides.forEach((slide) => {
+        slide.classList.remove('active');
+    });
+
+    slides[currentSlide].classList.add('active');
+}
+
+function startSlideShow() {
+    slideInterval = setInterval(() => {
+        showSlide(currentSlide + 1);
+    }, 5000);
+}
+
+function stopSlideShow() {
+    clearInterval(slideInterval);
+}
+
+// Inicializar el slider
+showSlide(currentSlide);
+startSlideShow();
+
+// Botones de navegación
+nextButton.addEventListener('click', () => {
+    stopSlideShow();
+    showSlide(currentSlide + 1);
+    startSlideShow();
+});
+
+prevButton.addEventListener('click', () => {
+    stopSlideShow();
+    showSlide(currentSlide - 1);
+    startSlideShow();
+});
