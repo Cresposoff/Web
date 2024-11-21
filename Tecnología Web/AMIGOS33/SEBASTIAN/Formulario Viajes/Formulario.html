@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Viaje</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/viajar.png">
+</head>
+<header>
+    <div class="container">
+        <a href="index.html">
+            
+        </a>
+        <nav>
+            <a href="../../PORTAFOLIO.html#trabajosAmigo1">REGRSAR AL PORTAFOLIO</a>
+          
+        </nav>
+    </div>
+</header>
+<body>
+
+<body>
+    <p>COSTE TOURS</p>
+    <div class="form-container">
+        <form>
+            <div class="form-group form-group-1">
+                <label for="destino">DESTINO *</label>
+                <select class="form-dropdown validate[required]" id="input_3" name="q3_destino"
+                    data-component="dropdown" required="" aria-label="DESTINO">
+                    <option value="">Seleccione opción</option>
+                    <option value="ECUADOR">TOLÚ</option>
+                    <option value="GALÁPAGOS">CAUCA</option>
+                    <option value="AMAZONÍA">RIOACHA</option>
+                    <option value="PERÚ">CHOCÓ</option>
+                </select>
+
+                <label for="fecha_salida">FECHA DE SALIDA *</label>
+                <div class="fecha">
+                    <input type="datetime-local" id="mes" name="mes" required>
+                    <input type="checkbox" id="flexible" name="flexible">
+                    <label for="flexible" class="inline">Soy flexible con la fecha</label>
+                </div>
+
+                <label for="num_adultos">NÚMERO DE ADULTOS *</label>
+                <select id="num_adultos" name="num_adultos">
+                    <option value="">Seleccione opción</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">más de 5</option>
+                </select>
+                <input type="checkbox" id="viajamos_ninos" name="viajamos_ninos">
+                <label for="viajamos_ninos" class="inline">Viajamos con niños</label>
+
+                <label>ACTIVIDADES O TOUR DIARIOS PUEDEN SER COMPARTIDO O PRIVADO</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="choco" name="choco">
+                    <label for="choco" class="inline">Cruceros en CHOCÓ</label><br>
+                    <input type="checkbox" id="hotel_yate" name="hotel_yate">
+                    <label for="hotel_yate" class="inline">Tours combinados, hotel-yate</label><br>
+                    <input type="checkbox" id="tours_empacados" name="tours_empacados">
+                    <label for="tours_empacados" class="inline">Tours empacados</label>
+                </div><br>
+
+                <label>ÚNASE A UN TOUR PROGRAMADO, VIAJE EN GRUPO DE VARIOS DÍAS</label>
+                <div class="radio-group">
+                    <input type="checkbox" id="sugerencia" name="tipo_tour">
+                    <label for="sugerencia" class="inline">Me gustaría que mi Especialista de viaje me sugiera en base a
+                        mis
+                        intereses</label>
+                </div>
+
+                <label for="acomodacion">TIPO DE ACOMODACIÓN *</label>
+                <div class="radio-group">
+                    <input type="radio" id="5estrellas" name="acomodacion" value="5">
+                    <label for="5estrellas" class="inline">5 estrellas</label>
+                    <input type="radio" id="4estrellas" name="acomodacion" value="4">
+                    <label for="4estrellas" class="inline">4 estrellas</label>
+                    <input type="radio" id="3estrellas" name="acomodacion" value="3">
+                    <label for="3estrellas" class="inline">3 estrellas</label>
+                </div>
+
+                <label for="presupuesto">PRESUPUESTO POR PERSONA USD. Dólar *</label>
+                <select id="presupuesto" name="presupuesto">
+                    <option value="">Seleccione opción</option>
+                    <option value="100">400-600</option>
+                    <option value="200">600-800</option>
+                    <option value="300">800-1.000</option>
+                    <option value="400">1.000-1.200</option>
+                    <option value="500">+1.200</option>
+                </select>
+
+                <label>ES EL PRESUPUESTO FLEXIBLE?</label>
+                <div class="radio-group">
+                    <input type="radio" id="maximo" name="presupuesto_flexible" value="maximo">
+                    <label for="maximo" class="inline">El descrito es mi máximo presupuesto</label><br>
+                    <input type="radio" id="incremento" name="presupuesto_flexible" value="incremento">
+                    <label for="incremento" class="inline">Flexible: Puedo incrementar 20%, si se necesita</label><br>
+                    <input type="radio" id="muy_flexible" name="presupuesto_flexible" value="muy_flexible">
+                    <label for="muy_flexible" class="inline">Muy flexible: No se enfoque en un presupuesto
+                        específico</label>
+                </div>
+                <br>
+            </div>
+        </form>
+        <form>
+                <img src="img/imagen1.png" alt="imagen1">
+            <div class="form-group form-group-2">
+                <label for="nombre">NOMBRE Y APELLIDO *</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">E-MAIL *</label>
+                <input type="email" id="email" name="email">
+
+                <label for="telefono">NÚMERO TELEFÓNICO *</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="ciudad">CIUDAD *</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terminos" name="terminos">
+                    <label for="terminos">Estoy de acuerdo con los Términos de Uso y Políticas de Privacidad *</label>
+                </div>
+
+                <button type="submit">Solicitar mi viaje</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

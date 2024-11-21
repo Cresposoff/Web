@@ -1,0 +1,44 @@
+header {
+    padding: 20px 0; /* Aumentamos el padding para que sea más alto */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 16px; /* Aumentamos el tamaño de la fuente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregamos sombra para darle profundidad */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Agregamos espacio en los bordes */
+}
+
+header .container .logo {
+    width: 120px; /* Un poco más grande para darle presencia */
+}
+
+header .container nav a {
+    color: #333; /* Color de texto más oscuro */
+    text-decoration: none;
+    margin: 0 20px; /* Espaciado mayor entre los enlaces */
+    padding: 12px 20px; /* Botones más grandes */
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Transición suave */
+    font-weight: bold; /* Negrita para resaltar */
+}
+
+/* Cambio de color cuando se pasa el mouse */
+header .container nav a:hover {
+    color: white; /* Texto blanco */
+    background-color: rgb(255, 0, 0); /* Fondo rojo al pasar el mouse */
+    padding: 12px 20px; /* Mantener el padding para un botón coherente */
+}
+
+/* Estilo adicional para que el header sea más prominente */
+header {
+    border-bottom: 3px solid #007bff; /* Agregamos una línea debajo para definir el área */
+}

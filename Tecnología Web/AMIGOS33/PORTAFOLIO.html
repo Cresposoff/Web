@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Amigos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header-principal">
+        <h1>BIENVENIDOS A NUESTRO PORTAFOLIO</h1>
+    </header>
+
+    <!-- Sección con los 3 amigos -->
+    <div class="amigos">
+        <div class="amigo" id="amigo1">
+            <img src="sebas.png" alt="Amigo 1" class="imagen-amigo">
+            <p>JHOAN SEBASTIAN MONTEALEGRE</p>
+            <button class="trabajo-btn" onclick="mostrarTrabajos('trabajosAmigo1')">VER SUS TRABAJOS</button>
+        </div>
+
+        <div class="amigo" id="amigo2">
+            <img src="peña.png" alt="Amigo 2" class="imagen-amigo">
+            <p>JULIAN CAMILO PEÑA</p>
+            <button class="trabajo-btn" onclick="mostrarTrabajos('trabajosAmigo2')">VER SUS TRABAJOS</button>
+        </div>
+
+        <div class="amigo" id="amigo3">
+            <img src="julian.png" alt="Amigo 3" class="imagen-amigo">
+            <p>JULIAN CORTÉS PERDOMO</p>
+            <button class="trabajo-btn" onclick="mostrarTrabajos('trabajosAmigo3')">VER SUS TRABAJOS</button>
+        </div>
+    </div>
+
+    <!-- Trabajos de Jhoan Sebastian -->
+    <div class="trabajos-section" id="trabajosAmigo1">
+        <h2>TRABAJOS DE JHOAN SEBASTIAN</h2>
+        <div class="trabajos-lista">
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">HOJA DE VIDA</span>
+                <a href="SEBASTIAN/Hoja de vida sebastián/HojaDeVida.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">PÁGINA COCA-COLA</span>
+                <a href="SEBASTIAN/Proyecto Coca/index.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="
+            trabajo-item">
+                <span class="trabajo-nombre">FORMULARIO</span>
+                <a href="SEBASTIAN/Formulario Viajes/Formulario.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">PAGINA-EMPRESA</span>
+                <a href="PROYECTOAJIYACQUI/index.html" class="volver-btn">Ver Página Web</a>
+            </div>
+        </div>
+        <a href="#" onclick="ocultarTrabajos('trabajosAmigo1')" class="volver-btn">Regresar</a>
+    </div>
+
+    <!-- Trabajos de Julian Peña -->
+    <div class="trabajos-section" id="trabajosAmigo2">
+        <h2>TRABAJOS DE JULIAN CAMILO</h2>
+        <div class="trabajos-lista">
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">HOJA DE VIDA</span>
+                <a href="PEÑA/HOJA.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">PÁGINA COCA-COLA</span>
+                <a href="PEÑA/CocaCola.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">FORMULARIO</span>
+                <a href="PEÑA/Formulario.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">PAGINA-EMPRESA</span>
+                <a href="PROYECTOAJIYACQUI/index.html" class="volver-btn">Ver Página Web</a>
+            </div>
+        </div>
+        <a href="#" onclick="ocultarTrabajos('trabajosAmigo2')" class="volver-btn">Regresar</a>
+    </div>
+
+   <!-- Trabajos de Julian Cortés -->
+<div class="trabajos-section" id="trabajosAmigo3">
+    <h2>TRABAJOS DE JULIAN CORTÉS</h2>
+    <div class="trabajos-lista">
+        <div class="trabajo-item">
+            <span class="trabajo-nombre">HOJA DE VIDA</span>
+            <a href="JULIAN/HOJADEVIDAJULIAN/HOJA DE VIDA.html" class="volver-btn">Ver Página Web</a>
+        </div>
+        <div class="trabajo-item">
+            <span class="trabajo-nombre">PÁGINA COCA-COLA</span>
+            <a href="" class="volver-btn">Ver Página Web</a>
+        </div>
+        <div class="trabajo-item">
+            <span class="trabajo-nombre">FORMULARIO</span>
+            <a href="JULIAN/FORMULARIOJULIAN/formulario prueba.html" class="volver-btn">Ver Página Web</a>
+        </div>
+
+        <div class="trabajo-item">
+            <span class="trabajo-nombre">PAGINA-EMPRESA</span>
+            <a href="PROYECTOAJIYACQUI/index.html" class="volver-btn">Ver Página Web</a>
+        </div>
+    </div>
+    <!-- Cambiar el ID aquí para que se refiera a trabajosAmigo3 -->
+    <a href="#" onclick="ocultarTrabajos('trabajosAmigo3')" class="volver-btn">Regresar</a>
+</div>
+
+    <script>
+        function mostrarTrabajos(trabajosId) {
+            document.querySelectorAll('.trabajos-section').forEach(section => section.style.display = 'none');
+            document.querySelector('.amigos').style.display = 'none';
+            document.getElementById(trabajosId).style.display = 'block';
+        }
+
+        function ocultarTrabajos(trabajosId) {
+            document.getElementById(trabajosId).style.display = 'none';
+            document.querySelector('.amigos').style.display = 'flex';
+        }
+        
+    </script>
+
+</body>
+
+</html>

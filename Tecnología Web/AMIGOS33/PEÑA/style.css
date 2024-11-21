@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Roboto";
+    font-size: 13px;
+    font-size: 13px;
+}
+
+a
+{
+    display: inline-block;
+}
+
+p
+{
+    color:black;
+}
+
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo
+{
+    width: 100px;
+}
+
+header .container nav a
+{
+    Color: red;
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 10px;
+}
+
+header .container nav a:hover
+{
+    Color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    text-decoration: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.boton
+{
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.boton.boton-rojo
+{
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton.boton-blanco
+{
+    color: red;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid red;
+}
+
+.seccion
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.cuadrado-perfecto /pendiente este codigo para  la clase de los lunes/
+{
+    width: 100%;
+    
+}
+
+.container
+{
+    width: 1140px;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.columna /quedamos hasta aca con la clase del lunes/
+{
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.columna-33
+{
+    width: 33.33%;
+}
+
+#inicio
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#inicio img /quedamos hasta aca con la clase del miercoles/
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    
+}
+
+#inicio .bloque-inicio
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#inicio .bloque-inicio h1
+{
+    color: white;
+    font-size: 35px;
+}
+
+#inicio .bloque-inicio p
+{
+    color: white;
+    font-size: 16px;
+}
+
+#nosotros
+{
+    background-image: url(imagenes/latas.jpg);
+    background-size: cover;
+
+}
+
+#nosotros p
+{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+#servicios .bloque-servicio
+{
+    border: 1px solid grey;
+
+}
+
+#servicios .bloque-servicio .bloque-img-servicio
+{
+    width: 100%;
+}
+
+#servicios .bloque-servicio .bloque-img-servicio img 
+{
+    width: 100%;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio
+{
+    padding: 15px;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio h3
+{
+    margin-top: 0px;
+    font-size: 25px;
+}
+#galeria h2,
+#contactenos h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#galeria .cuadrado-perfecto {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#galeria .cuadrado-perfecto img {
+    width: 100%;
+    display: block;
+}
+
+#galeria .cuadrado-perfecto h4 {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#contactenos .form-block {
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff5f5;
+}
+
+#contactenos .form-block label {
+    font-weight: bold;
+    color: red;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contactenos .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contactenos textarea.form-control {
+    height: 100px;
+}
+
+#contactenos .boton.boton-rojo {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#contactenos iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px; 
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgba(255, 0, 0, 0.788);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .columna-25 img {
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    filter: brightness(0) invert(1); 
+}
+
+footer h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li{
+    margin: 5px 0;
+    color: white;
+}
+
+footer ul li, footer p, .barra-footer {
+    color: white;
+}
+
+.barra-footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+#contactenos .columna-50 {
+    width: 50%;
+    padding: 0 15px;
+}
+
+footer .columna-25 {
+    width: 33.33%;
+    text-align: center; 
+    padding: 15px;
+}

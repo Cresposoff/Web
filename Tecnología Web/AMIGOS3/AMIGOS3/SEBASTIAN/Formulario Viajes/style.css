@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*Ponemos la imagen de fondo*/
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    margin: 50px;
+}
+
+
+p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin: 10px;
+}
+header
+{
+    padding: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2; /*esto es para que la barra de navegación quede por encima de la imagen*/
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 14px;
+}
+
+header {
+    padding: 20px 0; /* Aumentamos el padding para que sea más alto */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 16px; /* Aumentamos el tamaño de la fuente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregamos sombra para darle profundidad */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Agregamos espacio en los bordes */
+}
+
+header .container .logo {
+    width: 120px; /* Un poco más grande para darle presencia */
+}
+
+header .container nav a {
+    color: #333; /* Color de texto más oscuro */
+    text-decoration: none;
+    margin: 0 20px; /* Espaciado mayor entre los enlaces */
+    padding: 12px 20px; /* Botones más grandes */
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Transición suave */
+    font-weight: bold; /* Negrita para resaltar */
+}
+
+/* Cambio de color cuando se pasa el mouse */
+header .container nav a:hover {
+    color: white; /* Texto blanco */
+    background-color: rgb(255, 0, 0); /* Fondo rojo al pasar el mouse */
+    padding: 12px 20px; /* Mantener el padding para un botón coherente */
+}
+
+/* Estilo adicional para que el header sea más prominente */
+header {
+    border-bottom: 3px solid #007bff; /* Agregamos una línea debajo para definir el área */
+}
+
+.form-container {
+    margin: 0 auto; /* Centra el formulario en la página */
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre los dos bloques */
+    background-color: rgb(224, 238, 243);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px; /* Ajusta el ancho máximo del formulario */
+    box-shadow: 9px 7px 10px rgba(168, 31, 31, 0.1);
+}
+
+.form-container .form-group {
+    padding: 30px; /* Ajusta el ancho del formulario */
+}
+
+.form-container .form-group-1 {
+
+}
+
+.form-container .form-group-2 {
+    min-width: 450px;
+}
+
+/*Aquí está para que quede el formulario en dos bloques de forma horizontal*/
+form {
+    width: 49%; /* Divide el ancho para que cada bloque ocupe la mitad */
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+form img {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="datetime-local"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="datetime-local"]:hover,
+form input[type="tel"]:hover,
+form select:hover{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid rgb(0, 86, 179);
+    background-color: rgb(196, 237, 245);
+    border-radius: 4px;
+}
+
+.fecha input[type="text"] {
+    width: 30%;
+    margin-right: 5px;
+}
+
+.inline {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.checkbox-group,
+.radio-group {
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(0, 86, 179);
+}
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    .form-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}

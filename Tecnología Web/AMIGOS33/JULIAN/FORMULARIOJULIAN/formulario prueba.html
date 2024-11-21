@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="pizzalogoarriba.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario de Pedido</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="nav-volver">
+                <a href="../../PORTAFOLIO.html#trabajosAmigo3">REGRESAR AL PORTAFOLIO</a>
+               
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <img src="pizzalogo.png" alt="Logo de la Pizzería" class="logo">
+        <h1>¡Tomaremos tu pedido!</h1>
+        <form id="pedidoForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="barrio">Barrio:</label>
+            <input type="text" id="barrio" name="barrio" required>
+
+            <label for="tamanio">Tamaño de la pizza:</label>
+            <select id="tamanio" name="tamanio" required>
+                <option value="" disabled selected>Seleccione un tamaño</option>
+                <option value="familiar">Familiar (12 porciones)</option>
+                <option value="mediana">Mediana (8 porciones)</option>
+                <option value="personal">Personal (4 porciones)</option>
+                <option value="rebanada">Rebanada (1 porción)</option>
+            </select>
+                
+            <label for="tipoPizza">Tipo de Pizza:</label>
+            <select id="tipoPizza" name="tipoPizza" required>
+                <option value="" disabled selected>Seleccione su tipo de pizza</option>
+                <option value="Margarita">Margarita</option>
+                <option value="Pepperoni">Pepperoni</option>
+                <option value="Cuatro-quesos">Cuatro Quesos</option>
+                <option value="Vegetariana">Vegetariana</option>
+                <option value="Hawaiana">Hawaiana</option>
+                <option value="Mexicana">Mexicana</option>
+                <option value="De la casa">De la casa</option>
+            </select>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+
+            <label for="metodoPago">Método de Pago:</label>
+            <select id="metodoPago" name="metodoPago" required>
+                <option value="" disabled selected>Seleccione un método de pago</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta de crédito/débito</option>
+                <option value="transferencia">Transferencia bancaria</option>
+                <option value="pagoMovil">Pago Móvil</option>
+            </select>
+
+            <button type="submit">Realizar Pedido</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    font-size: 13px;
+    background-color: #894545; 
+}
+
+h1 {
+    font-family: "Roboto"; 
+    color: white;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+header {
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #5d2f2f;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    width: 100px;
+}
+
+header .container nav a
+{
+    Color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 10px;
+}
+header .container nav a:hover
+{
+    Color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    text-decoration: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.boton {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton.boton-rojo {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-size: 20px;
+}
+
+.boton.boton-blanco {
+    color: #ffffff;
+    background-color: rgb(255, 0, 0);
+    font-size: 16px;
+    border: 1px solid #ff0000;
+}
+
+.seccion {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.cuadrado-perfecto {
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.columna {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.columna-33 {
+    width: 33.33%;
+}
+
+#inicio {
+    position: relative;
+}
+
+#inicio img {
+    width: 100%;
+    display: block;
+}
+
+#inicio .bloque-inicio {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    text-align: center;
+    margin-left: -200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#inicio .bloque-inicio h1 {
+    color: white;
+    font-size: 35px;
+}
+
+#inicio .bloque-inicio p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+#nosotros {
+    background-image: url(cocanegra.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 300px; 
+    padding-bottom: 300px;
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+}
+
+#nosotros p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    max-width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#servicios .bloque-img-servicio img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#servicios .bloque-servicio {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+#servicios .bloque-contenido-servicio {
+    padding: 15px;
+}
+
+#servicios .bloque-contenido-servicio h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#galeria .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#galeria .columna {
+    width: 32%; 
+    border: 3px solid rgb(0, 0, 0); 
+    border-radius: 15px; 
+    padding: 15px; 
+}
+
+#galeria .columna img {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+#galeria .columna h4 {
+    font-size: 20px;
+    color: white;
+}
+
+.container-fluid {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer {
+    background-color: #5d2f2f;
+    padding: 40px 0;
+    font-size: 14px;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .columna {
+    width: calc(25% - 20px);
+    min-width: 180px;
+}
+
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+footer .barra-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    font-size: 13px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+#mapa {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+#mapa iframe {
+    width: 100%; 
+    max-width: 650px; 
+    height: 450px;
+    margin-left: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#contactenos {
+    padding: 50px 0;
+}
+
+#contactenos .columna {
+    padding: 15px;
+}
+
+#contactenos .columna-50 {
+    width: 48%;
+}
+
+#contactenos h3 {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#formulario-comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-comentarios input[type="text"],
+#formulario-comentarios input[type="email"],
+#formulario-comentarios textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #e4002b; 
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+#formulario-comentarios textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#formulario-comentarios input[type="submit"] {
+    background-color: #e4002b; 
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+footer .columna ul li a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+footer .columna ul li a:hover {
+    color: #cc0000; 
+}
+
+
+footer .columna-25 ul li a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+footer .columna-25 ul li a:hover {
+    color: #cc0000; 
+}

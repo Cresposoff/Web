@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Amigos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header-principal">
+        <h1>BIENVENIDOS A NUESTRO PORTAFOLIO</h1>
+    </header>
+
+    <!-- Sección con los 3 amigos -->
+    <div class="amigos">
+        <div class="amigo" id="amigo1">
+            <img src="sebas.png" alt="Amigo 1" class="imagen-amigo">
+            <p>JHOAN SEBASTIAN MONTEALGRE</p>
+            <button class="trabajo-btn" onclick="mostrarTrabajos('trabajosAmigo1')">VER SUS TRABAJOS</button>
+        </div>
+
+        <div class="amigo" id="amigo2">
+            <img src="peña.png" alt="Amigo 2" class="imagen-amigo">
+            <p>JULIAN CAMILO PEÑA</p>
+            <button class="trabajo-btn" onclick="mostrarTrabajos('trabajosAmigo2')">VER SUS TRABAJOS</button>
+        </div>
+
+        <div class="amigo" id="amigo3">
+            <img src="julian.png" alt="Amigo 3" class="imagen-amigo">
+            <p>JULIAN CORTES PERDOMO</p>
+            <button class="trabajo-btn" onclick="mostrarTrabajos('trabajosAmigo3')">VER SUS TRABAJOS</button>
+        </div>
+    </div>
+
+    <!-- Sección para mostrar los trabajos de Amigo 1 -->
+    <div class="trabajos-section" id="trabajosAmigo1">
+        <h2>TRABAJOS DE JHOAN SEBASTIAN</h2>
+        <div class="trabajos-lista">
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">HOJA DE VIDA</span>
+                <a href="SEBASTIAN/Hoja de vida sebastián/HojaDeVida.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">PÁGINA COCA-COLA</span>
+                <a href="SEBASTIAN/Proyecto Coca/index.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">FORMULARIO</span>
+                <a href="SEBASTIAN/Formulario Viajes/Formulario.html" class="volver-btn">Ver Página Web</a>
+            </div>
+        </div>
+        <div class="trabajo-item">
+            <span class="trabajo-nombre">PAGINA EMPRESA</span>
+            <a href="PROYECTOAJIYACQUI/index.html" class="volver-btn">Ver Página Web</a>
+        </div>
+        <a href="#" onclick="ocultarTrabajos('trabajosAmigo1')" class="volver-btn">Regresar</a>
+    </div>
+
+    <!-- Sección para mostrar los trabajos de Amigo 2 -->
+    <div class="trabajos-section" id="trabajosAmigo2">
+        <h2>TRABAJOS DE JULIAN CAMILO</h2>
+        <div class="trabajos-lista">
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">HOJA DE VIDA</span>
+                <a href="PEÑA/HOJA.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">PÁGINA COCA-COLA</span>
+                <a href="PEÑA/Coca Cola.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">FORMULARIO</span>
+                <a href="PEÑA/formulario.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">PAGINA EMPRESA</span>
+                <a href="PROYECTOAJIYACQUI/index.html" class="volver-btn">Ver Página Web</a>
+            </div>
+        </div>
+        <a href="#" onclick="ocultarTrabajos('trabajosAmigo2')" class="volver-btn">Regresar</a>
+    </div>
+
+    <!-- Sección para mostrar los trabajos de Amigo 3 -->
+    <div class="trabajos-section" id="trabajosAmigo3">
+        <h2>TRABAJOS DE JULIAN CORTES</h2>
+        <div class="trabajos-lista">
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">HOJA DE VIDA</span>
+                <a href="JULIAN/HOJADEVIDAJULIAN/HOJA DE VIDA.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">PÁGINA COCA-COLA</span>
+                <a href="JULIAN/COCACOLAJULIAN/PaginaCocaColaModificada.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">FORMULARIO</span>
+                <a href="JULIAN/FORMULARIOJULIAN/formulario prueba.html" class="volver-btn">Ver Página Web</a>
+            </div>
+            <div class="trabajo-item">
+                <span class="trabajo-nombre">PAGINA EMPRESA</span>
+                <a href="PROYECTOAJIYACQUI/index.html" class="volver-btn">Ver Página Web</a>
+            </div>
+        </div>
+        <a href="#" onclick="ocultarTrabajos('trabajosAmigo3')" class="volver-btn">Regresar</a>
+    </div>
+
+    <script>
+        // Función para mostrar los trabajos de cada persona
+        function mostrarTrabajos(trabajosId) {
+            // Ocultar todas las secciones de trabajos
+            const trabajos = document.querySelectorAll('.trabajos-section');
+            trabajos.forEach(trabajo => trabajo.style.display = 'none');
+
+            // Mostrar los trabajos correspondientes
+            document.getElementById(trabajosId).style.display = 'block';
+            // Ocultar la sección de amigos
+            document.querySelector('.amigos').style.display = 'none';
+        }
+
+        // Función para ocultar los trabajos y volver a la sección de amigos
+        function ocultarTrabajos(trabajosId) {
+            document.getElementById(trabajosId).style.display = 'none';
+            document.querySelector('.amigos').style.display = 'flex';
+        }
+
+        // Cuando se carga la página, revisa si hay un hash en la URL
+        document.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash; // Obtiene el hash (#trabajosAmigo1)
+            if (hash) {
+                const sectionId = hash.replace('#', ''); // Elimina el símbolo #
+                mostrarTrabajos(sectionId); // Usa la función que ya tienes
+            }
+        });
+    </script>
+
+</body>
+
+</html>

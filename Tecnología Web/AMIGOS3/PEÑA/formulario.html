@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario Tesla</title>
+
+    <header>
+        <div class="container">
+           
+              
+            </a>
+            <nav>
+                <a href="../PORTAFOLIO.html#trabajosAmigo2">REGRESAR AL PORTAFOLIO</a>
+                
+        </div>
+      </header>
+</head>
+<body>
+    <div class="container">
+        <img src="imagenes/1200px-Cybertrucklogo.svg-removebg-preview.png" alt="Logo" class="logo">
+        <h1>Formulario de reserva CyberTruck</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo <span class="required">*</span></label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono <span class="required">*</span></label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de Nacimiento <span class="required">*</span></label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="pais">País <span class="required">*</span></label>
+                <select id="pais" name="pais" required>
+                    <option value="">Selecciona uno de los paises disponibles</option>
+                    
+                    <option value="mexico">México</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Selecciona una Opción <span class="required">*</span></label>
+                <div>
+                    <input type="radio" id="cyberbeast" name="opcion" value="cyberbeast" required>
+                    <label for="cyberbeast">Cyberbeast</label>
+                </div>
+                <div>
+                    <input type="radio" id="allwheel" name="opcion" value="allwheel" required>
+                    <label for="allwheel">All-Wheel Drive</label>
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
