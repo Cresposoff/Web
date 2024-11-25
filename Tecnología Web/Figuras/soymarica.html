@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la Empresa</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #00fff7;
+        }
+
+        /* Cabecera */
+        header {
+            background-color: #48ff00;
+            color: #ff8c00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Sección de Servicios */
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            color: #e60086;
+        }
+
+        .service-item {
+            margin: 20px 0;
+        }
+
+        /* Contacto */
+        .contact {
+            background-color: #fff200;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #0073e6;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #f60000;
+        }
+
+        .contact form button {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #3f00b5;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <h1>TOMAS ES MARICA</h1>
+        <p>SI SEÑOR</p>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-item">
+            <h3>Consultoría</h3>
+            <p>Asesoramiento profesional para optimizar tus procesos y estrategias.</p>
+        </div>
+        <div class="service-item">
+            <h3>Desarrollo Web</h3>
+            <p>Creación de sitios web personalizados y aplicaciones para tu negocio.</p>
+        </div>
+        <div class="service-item">
+            <h3>Marketing Digital</h3>
+            <p>Campañas estratégicas para aumentar tu visibilidad y presencia en línea.</p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact">
+        <h2>Contáctanos</h2>
+        <p>Déjanos un mensaje y nos pondremos en contacto contigo a la brevedad.</p>
+        <form>
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="message" placeholder="Mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

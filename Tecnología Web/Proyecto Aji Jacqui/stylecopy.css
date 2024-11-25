@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #00fff7;
+}
+
+/* Cabecera */
+header {
+    background-color: #48ff00;
+    color: #ff8c00;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Sección de Servicios */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: #e60086;
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+/* Contacto */
+.contact {
+    background-color: #fff200;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #0073e6;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f60000;
+}
+
+.contact form button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #3f00b5;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9em;
+}
